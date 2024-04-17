@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: commandservice
-          image: mohdsalmanirfan/commandservice:latest
+          image: mohdsalmanirfan/commandservice
 ---
 apiVersion: v1
 kind: Service
@@ -28,4 +28,9 @@ spec:
   - name: commandservice
     protocol: TCP
     port: 80
-    targetPort: 80 
+    targetPort: 80
+
+
+
+
+  
